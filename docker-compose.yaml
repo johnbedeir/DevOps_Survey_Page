@@ -1,0 +1,8 @@
+services:
+  survey:
+    image: nginx:latest
+    volumes:
+      - .:/usr/share/nginx/html/
+    ports:
+      - 8040:80
+    restart: always
