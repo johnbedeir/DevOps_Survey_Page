@@ -9,7 +9,7 @@
 	<title>Eskola | DevOps Survey</title>
 
 	<!-- Favicons-->
-	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
 	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
 	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
@@ -42,7 +42,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-5">
-					<a href="index.html"><img src="img/logo.png" alt="" width="50" height="55"></a>
+					<a href="index.html"><img src="img/logo.png" alt="" width="200"></a>
 				</div>
 				<div class="col-7">
 					<div id="social">
@@ -198,6 +198,14 @@
 														<label for="q3-o3" class="wrapper">Puppet</label>
 													</div>
 												</li>
+												<li>
+													<div class="checkbox_radio_container">
+														<input type="radio" id="q3-o4" name="question_3" class="required"
+															onchange="getVals(this, 'question_3');">
+														<label class="radio" for="q3-o4"></label>
+														<label for="q3-o4" class="wrapper">Ansible</label>
+													</div>
+												</li>
 											</ul>
 										</div>
 										<!-- /review_block-->
@@ -208,6 +216,78 @@
 										</div>
 									</div>
 									<!-- Q3-->
+
+									<!-- Q4 -->
+									<div class="step">
+										<h3 class="main_question mb-4"><strong>4 of 5</strong>Which Container Orchestration tool?</h3>
+										<div class="review_block">
+											<ul>
+												<li>
+													<div class="checkbox_radio_container">
+														<input type="radio" id="q4-o1" name="question_4" class="required"
+															onchange="getVals(this, 'question_4');">
+														<label class="radio" for="q4-o1"></label>
+														<label for="q4-o1" class="wrapper">Kubernetes</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox_radio_container">
+														<input type="radio" id="q4-o2" name="question_4" class="required"
+															onchange="getVals(this, 'question_4');">
+														<label class="radio" for="q4-o2"></label>
+														<label for="q4-o2" class="wrapper">Docker Swarm</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox_radio_container">
+														<input type="radio" id="q4-o2" name="question_4" class="required"
+															onchange="getVals(this, 'question_4');">
+														<label class="radio" for="q4-o2"></label>
+														<label for="q4-o2" class="wrapper">Nomad</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<!-- /review_block-->
+										<div class="form-group">
+											<label for="additional_message_3_label">Other</label>
+											<textarea name="additional_message_3" id="additional_message_3_label" class="form-control"
+												style="height:120px;" onkeyup="getVals(this, 'additional_message_3');"></textarea>
+										</div>
+									</div>
+									<!-- Q4-->
+
+									<!-- Q5 -->
+									<div class="step">
+										<h3 class="main_question mb-4"><strong>5 of 5</strong>Which CD tool?</h3>
+										<div class="review_block">
+											<ul>
+												<li>
+													<div class="checkbox_radio_container">
+														<input type="radio" id="q5-o1" name="question_5" class="required"
+															onchange="getVals(this, 'question_5');">
+														<label class="radio" for="q5-o1"></label>
+														<label for="q5-o1" class="wrapper">ArgoCD</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox_radio_container">
+														<input type="radio" id="q5-o2" name="question_5" class="required"
+															onchange="getVals(this, 'question_5');">
+														<label class="radio" for="q5-o2"></label>
+														<label for="q5-o2" class="wrapper">FluxCD</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<!-- /review_block-->
+										<div class="form-group">
+											<label for="additional_message_3_label">Other</label>
+											<textarea name="additional_message_3" id="additional_message_3_label" class="form-control"
+												style="height:120px;" onkeyup="getVals(this, 'additional_message_3');"></textarea>
+										</div>
+									</div>
+									<!-- Q5-->
 
 									<!-- Summary-->
 									<div class="step">
